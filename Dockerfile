@@ -12,4 +12,4 @@ RUN npm install
 COPY backend .
 COPY --from=frontend-build /frontend/dist ../frontend/dist
 EXPOSE 5000
-CMD ["node","server.js"]
+CMD ["node", "server.js"]
